@@ -1,9 +1,14 @@
 /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package OOP_PRJ;
+
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication3;
 import java.time.LocalDate;
 /**
  *
@@ -15,6 +20,7 @@ public class items  {
     private String feedback_status;
     int amount,PAO;
     String expiring_date;
+    public items(){}
     public items(double cost,double selprice,int amount ,String barcode,String production,int PAO)
     {
         this.amount=amount;
