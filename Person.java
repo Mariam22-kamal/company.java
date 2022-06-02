@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package OOP_PRJ;
-
+import java.time.Year;
 /**
  *
  * @author Omar
@@ -25,7 +25,9 @@ public abstract class Person {
     }
    public void CalcAge()
    {
-   
+       Year current_year=Year.now();
+       int temp=current_year.getValue();
+       Age=temp-Year_Of_Birth;
    
    }
    

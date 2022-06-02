@@ -9,8 +9,8 @@ package OOP_PRJ;
  * and open the template in the editor.
 */
 import java.util.*;
-import java.util.HashMap;
-import  java.util.ArrayList;
+//import java.util.HashMap;
+//import  java.util.ArrayList;
 /**
  *
  * @author lenovo
@@ -33,12 +33,18 @@ public class order {
    }
     public double calprice(int size)
     {
-        int total_order_price;
+        double total_order_price = 0;
         //items i=new items();
-        for( int i: purchased_list.values())
-        {
+        purchased_list.forEach((key, Value) -> {
+            
+            total_order_price=(key.selling_price*Value)+total_order_price;
+            
+        });
+        //for( items i : purchased_list)
+        {//iterator
            //purchased_list.values(i));
-           System.out.println("key: " + i + " value: " + purchased_list.values(i));
+           
+           //System.out.println("key: " + i + " value: " + purchased_list.get((i)));//values(i));
 //purchased_list.getValue(i);
         }
         return 887;
