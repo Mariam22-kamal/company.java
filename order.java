@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package OOP_PRJ;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package javaapplication3;
 import java.util.*;
 /**
  *
@@ -30,6 +21,11 @@ public class order {
             purchased_list.put(p,quantity);
             item_list.add(p);
    }
+  public void remove_item_list(items p, int quantity){
+        
+            purchased_list.remove(p,quantity);
+            item_list.remove(p);
+   }
     public double calprice(int size)
     {
         purchased_list.forEach((key, Value) -> {
@@ -43,8 +39,3 @@ public class order {
    
     
 }
-   
-    
-    
-   
-    
